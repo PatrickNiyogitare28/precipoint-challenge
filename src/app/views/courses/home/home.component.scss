@@ -1,0 +1,17 @@
+.container{
+    .sidebar-container{
+        z-index: 2;
+    }
+}
+.main-wrapper-container{
+    z-index: 1;
+    display: flex;
+    .sidebar-wrapper{
+        width: 20%;
+        height: 92vh;
+    }
+    .content-wrapper{
+        background-color: rgba(235, 235, 235, 0.314);
+        width: 80%;
+    }
+}
