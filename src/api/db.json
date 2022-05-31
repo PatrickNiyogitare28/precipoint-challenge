@@ -135,5 +135,92 @@
         "age": "17",
         "class": "Class B"
       }
-    ]
+    ],
+      "months": [
+        {
+          "id": 1,
+          "label": "January"
+        },
+        {
+          "id": 2,
+          "label": "February"
+        },
+        {
+          "id": 3,
+          "label": "Mutch"
+        },
+        {
+          "id": 4,
+          "label": "April"
+        },
+        {
+          "id": 5,
+          "label": "May"
+        },
+        {
+          "id": 6,
+          "label": "June"
+        },
+        {
+          "id": 7,
+          "label": "July"
+        },
+        {
+          "id": 8,
+          "label": "August"
+        },
+        {
+          "id": 9,
+          "label": "September"
+        },
+        {
+          "id": 10,
+          "label": "October"
+        },
+        {
+          "id": 11,
+          "label": "November"
+        },
+        {
+          "id": 12,
+          "label": "December"
+        }
+      ],
+      "activities": [
+        {
+          "id": 1,
+          "monthId": 1,
+          "title": "Learning Python",
+          "startDate": "11 May 2022",
+          "endDate": "14 May 2022"
+        },
+        {
+          "id": 2,
+          "monthId": 1,
+          "title": "Learning Angular",
+          "startDate": "11 May 2022",
+          "endDate": "14 May 2022"
+        },
+        {
+          "id": 3,
+          "monthId": 2,
+          "title": "Learning Flutter",
+          "startDate": "11 May 2022",
+          "endDate": "14 May 2022"
+        },
+        {
+          "id": 4,
+          "monthId": 2,
+          "title": "Learning React Native",
+          "startDate": "11 May 2022",
+          "endDate": "14 May 2022"
+        },
+        {
+          "id": 5,
+          "monthId": 3,
+          "title": "Learning C++",
+          "startDate": "11 May 2022",
+          "endDate": "14 May 2022"
+        }
+      ]
   }

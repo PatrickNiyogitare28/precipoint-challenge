@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="sidebar-container">
+        <app-navbar></app-navbar>
+    </div>
+    <div class="main-wrapper-container">
+        <div class="sidebar-wrapper">
+            <app-sidebar></app-sidebar>
+        </div>
+        <div class="content-wrapper">
+
+           <div class="mt-2 month-wrapper">
+              <div *ngFor="let month of agendaMonths" class="month-card" (click)="onRouteToAgenda(month.label)">
+                    <h1>{{month.id}}</h1>
+                    <label>{{month.label}}</label>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
