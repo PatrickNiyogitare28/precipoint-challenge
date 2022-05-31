@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+import { CourseService } from 'src/app/services/courses/course.service';
+import { Case } from 'src/app/types/case';
+import { NavigateBack } from 'src/app/utils/navigate-back';
 
 @Component({
   selector: 'app-course',
@@ -7,9 +11,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CourseComponent implements OnInit {
 
-  constructor() { }
+  public cases: Array<Case> = [];
 
+  constructor(private route: Router, private courseService: CourseService, private activeRoute: ActivatedRoute) { }
+  
+  getCases = () => {
+    const id: number =  parseInt(this.activeRoute.snapshot.paramMap.get('id') as string);
+    const res = this.courseService.getCaseByCourseId(id)
+    res.subscribe((data) => {
+      this.cases = data as Array<Case>
+    })
+  }
+ 
   ngOnInit(): void {
+    this.getCases();
   }
 
 }

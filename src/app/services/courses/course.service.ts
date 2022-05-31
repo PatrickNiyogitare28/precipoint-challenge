@@ -13,4 +13,8 @@ export class CourseService {
   public getCourses = () => {
     return this.http.get('http://localhost:3000/courses')
   }
+
+  public getCaseByCourseId= (id: number) => {
+    return this.http.get('http://localhost:3000/cases?courseId='+id)
+  }
 }

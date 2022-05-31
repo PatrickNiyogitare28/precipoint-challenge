@@ -35,21 +35,21 @@
         "code": "HA001",
         "name": "Clinical Case I",
         "courseId":1,
-        "hoursPerSemister": 500
+        "hoursPerSemister": 20
       },
       {
         "id": 2,
-        "code": "HA001",
+        "code": "HA002",
         "name": "Clinical Case II",
         "courseId":1,
-        "hoursPerSemister": 500
+        "hoursPerSemister": 25
       },
       {
         "id": 3,
-        "code": "HA001",
+        "code": "HA003",
         "name": "Clinical Case III",
         "courseId":1,
-        "hoursPerSemister": 500
+        "hoursPerSemister": 30
       }
     ]
   }

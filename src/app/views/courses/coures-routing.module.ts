@@ -10,7 +10,7 @@ const routes: Routes = [
         component: HomeComponent
     },
     {
-        path: 'course/:id',
+        path: 'courses/:id',
         component: CourseComponent
     },
 ];

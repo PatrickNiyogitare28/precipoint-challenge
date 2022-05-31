@@ -9,8 +9,32 @@
         <div class="content-wrapper">
 
            <div class="mt-2">
-               <h1>Courses</h1>
+            <div class="tableContainer">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Course Name</th>
+                            <th>Code</th>
+                            <th>Number of hourse</th>
+                            <th>Slides</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let case of cases">
+                            <td>{{case.name}}</td>
+                            <td>{{case.code}}</td>
+                            <td>{{case.hoursPerSemister}}</td>
+                            <td>
+                                <div class="action-btn">
+                                    Open Slide
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
             </div>
         </div>
     </div>
 </div>
+<app-navigate-back></app-navigate-back>
