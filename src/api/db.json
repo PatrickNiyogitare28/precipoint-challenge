@@ -101,5 +101,39 @@
         ],
         "preparedBy": "John Doe"
       }
+    ],
+    "students": [
+      {
+        "id": "00001",
+        "firstName": "Eric",
+        "lastName": "David",
+        "gender": "Male",
+        "age": "18",
+        "class": "Class A"
+      },
+      {
+        "id": "00002",
+        "firstName": "Doline",
+        "lastName": "Faith",
+        "gender": "Female",
+        "age": "19",
+        "class": "Class A"
+      },
+      {
+        "id": "00003",
+        "firstName": "Nelly",
+        "lastName": "Dian",
+        "gender": "Female",
+        "age": "18",
+        "class": "Class B"
+      },
+      {
+        "id": "00004",
+        "firstName": "Tonny",
+        "lastName": "Gerand",
+        "gender": "Male",
+        "age": "17",
+        "class": "Class B"
+      }
     ]
   }

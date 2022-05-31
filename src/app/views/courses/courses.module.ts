@@ -7,6 +7,7 @@ import { CoursesComponent } from './courses/courses.component';
 import { CasesComponent } from './cases/cases.component';
 import { SlidesComponent } from './slides/slides.component';
 import { SlideComponent } from './slide/slide.component';
+import { StudentInfoComponent } from './student-info/student-info.component';
 
 
 
@@ -17,7 +18,8 @@ import { SlideComponent } from './slide/slide.component';
     CoursesComponent,
     CasesComponent,
     SlidesComponent,
-    SlideComponent
+    SlideComponent,
+    StudentInfoComponent
   ],
   imports: [
     CommonModule,
