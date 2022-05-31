@@ -3,6 +3,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { AgendaService } from 'src/app/services/agendas/agenda.service';
 import { AgendaActivity } from 'src/app/types/agenda-activity';
 import { AgendaMonth } from 'src/app/types/agenda-month';
+import { BreadCrumbHandler } from 'src/app/utils/bread-crumb';
 
 @Component({
   selector: 'app-activities',
@@ -13,7 +14,12 @@ export class ActivitiesComponent implements OnInit {
 
   public month: AgendaMonth = {} as AgendaMonth;
   public activities: Array<AgendaActivity> = [];
-  constructor(private activeRoute: ActivatedRoute, private agendaService: AgendaService, private route: Router) { }
+  constructor(
+    private activeRoute: ActivatedRoute, 
+    private agendaService: AgendaService, 
+    private route: Router,
+    private breadCrumbHandler: BreadCrumbHandler
+    ) { }
 
   getMonthActivities = () => {
     const monthLabel: string = this.activeRoute.snapshot.paramMap.get('month') as string;
@@ -31,8 +37,14 @@ export class ActivitiesComponent implements OnInit {
      this.route.navigate(['/agendas', this.month.label, id])
   }
 
+  setBreadCrumb = () => {
+    const agendaMonth = this.activeRoute.snapshot.paramMap.get('month');
+    this.breadCrumbHandler.setBreadCrumb(`Agendas / ${agendaMonth}`);
+  }
+
   ngOnInit(): void {
     this.getMonthActivities();
+    this.setBreadCrumb();
   }
 
 }

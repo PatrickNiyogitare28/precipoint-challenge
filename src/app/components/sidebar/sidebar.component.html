@@ -1,5 +1,5 @@
 <div class="container">
-   <div *ngFor="let route of routes; let i = index" class="router-container">
+   <div *ngFor="let route of routes; let i = index" class="router-container" (click)="onRoute(route.path)">
         <div class="parent-route-container">
             <label class="route">{{route.label}}</label>
         </div>
