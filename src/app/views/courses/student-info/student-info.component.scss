@@ -45,3 +45,27 @@
 .mt-2{
     margin-top: 2em;
 }
+
+.student-info{
+    h1{
+        font-size: 18px;
+    }
+   .data-card{
+       margin-top: 2em;
+       border: 1px solid rgba(128, 128, 128, 0.255);
+       padding: 20px;
+       border-radius: 5px;
+       width: 50%;
+       label{
+           font-size: 11px;
+           display: block;
+           margin-top: 1em;
+           span{
+               font-weight: bolder;
+               font-size: 15px;
+           }
+       }
+       
+   }
+}
+

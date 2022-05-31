@@ -15,14 +15,14 @@ export class CoursesComponent implements OnInit {
 
   getCourses = () => {
      const res =  this.coursesService.getCourses();
-     res.subscribe((data: any) => {
-       this.courses = data;
+     res.subscribe((data) => {
+       this.courses = data as Array<Course>;
      })
      console.log(JSON.stringify(this.courses))
   }
 
   onRouteToCourse = (id: number) => {
-    this.router.navigate([`/course`, id])
+    this.router.navigate([`/courses`, id])
   }
 
   ngOnInit(): void {

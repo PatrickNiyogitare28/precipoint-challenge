@@ -1,7 +1,10 @@
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
-import { CourseComponent } from "./course/course.component";
+import { CasesComponent } from "./cases/cases.component";
 import { HomeComponent } from "./home/home.component";
+import { SlideComponent } from "./slide/slide.component";
+import { SlidesComponent } from "./slides/slides.component";
+import { StudentInfoComponent } from "./student-info/student-info.component";
 
 const routes: Routes = [
     {
@@ -10,8 +13,20 @@ const routes: Routes = [
         component: HomeComponent
     },
     {
-        path: 'course/:id',
-        component: CourseComponent
+        path: 'courses/:id',
+        component: CasesComponent
+    },
+    {
+        path: 'courses/:courseId/:caseId',
+        component: SlidesComponent
+    },
+    {
+        path: 'courses/:courseId/:caseId/:slideId',
+        component: SlideComponent
+    },
+    {
+        path: 'students/:studentId',
+        component: StudentInfoComponent
     },
 ];
 

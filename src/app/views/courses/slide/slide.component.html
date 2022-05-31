@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="sidebar-container">
+        <app-navbar></app-navbar>
+    </div>
+    <div class="main-wrapper-container">
+        <div class="sidebar-wrapper">
+            <app-sidebar></app-sidebar>
+        </div>
+        <div class="content-wrapper">
+
+           <div class="mt-2">
+              <div class="slide">
+                  <div class="title-wrapper">
+                      <label>Course: <span>{{course.name}}</span></label>
+                      <label>Case: <span>{{case.name}}</span></label>
+                  </div>
+
+                  <div>
+                      <h2>{{slide.title}}</h2>
+                      <img src="{{slide.imageUrl}}" alt="slide" >
+                      <p *ngFor="let p of slide.paragraphs">
+                          {{p}}
+                      </p>
+                  </div>
+
+                  <div>
+                      <h3>Prepared by <span>{{slide.preparedBy}}</span></h3>
+                  </div>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
+<app-navigate-back></app-navigate-back>

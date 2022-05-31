@@ -1,0 +1,40 @@
+<div class="container">
+    <div class="sidebar-container">
+        <app-navbar></app-navbar>
+    </div>
+    <div class="main-wrapper-container">
+        <div class="sidebar-wrapper">
+            <app-sidebar></app-sidebar>
+        </div>
+        <div class="content-wrapper">
+
+           <div class="mt-2">
+            <div class="tableContainer">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Slide Title</th>
+                            <th>Prepared By</th>
+                            <th>Slide</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let slide of slides">
+                            <td>{{slide.id}}</td>
+                            <td>{{slide.title}}</td>
+                            <td>{{slide.preparedBy}}</td>
+                            <td>
+                                <div class="action-btn" (click)="onRouteToSlide(slide.id)"> 
+                                    Open Slide
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+<app-navigate-back></app-navigate-back>
