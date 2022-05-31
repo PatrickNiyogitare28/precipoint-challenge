@@ -7,6 +7,19 @@
             <app-sidebar></app-sidebar>
         </div>
         <div class="content-wrapper">
+           <div class="tab-wrapper">
+               <div [ngClass]="{'inactive' : !showCourses}" (click)="onShowCourses(true)">
+                   <label>Courses</label>
+               </div>
+               <div [ngClass]="{'inactive' : showCourses}" (click)="onShowCourses(false)">
+                <label>Students</label>
+            </div>
+           </div>
+
+           <div class="mt-2">
+               <app-courses *ngIf="showCourses"></app-courses>
+               <app-students *ngIf="!showCourses"></app-students>
+            </div>
         </div>
     </div>
 </div>

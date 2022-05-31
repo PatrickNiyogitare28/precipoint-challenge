@@ -1,0 +1,27 @@
+<div class="tableContainer">
+    <table>
+        <thead>
+            <tr>
+
+                <th>Course Name</th>
+                <th>Code</th>
+                <th>Number of hourse</th>
+                <th>Proffesor</th>
+                <th>Slides</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let course of courses">
+                <td>{{course.name}}</td>
+                <td>{{course.code}}</td>
+                <td>{{course.proffessor}}</td>
+                <td>{{course.hoursPerSemister}}</td>
+                <td>
+                    <div class="action-btn" (click)="onRouteToCourse(course.id)">
+                        Open Slide
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

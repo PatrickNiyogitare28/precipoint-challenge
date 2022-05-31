@@ -1,0 +1,55 @@
+{
+    "courses": [
+      {
+        "id": 1,
+        "code": "CL001",
+        "name": "Biology",
+        "proffessor": "John Doe",
+        "hoursPerSemister": 500
+      },
+      {
+        "id": 2,
+        "code": "CL002",
+        "name": "Mathematics",
+        "proffessor": "John Doe",
+        "hoursPerSemister": 500
+      },
+      {
+        "id": 3,
+        "code": "CL003",
+        "name": "Physics",
+        "proffessor": "John Doe",
+        "hoursPerSemister": 500
+      },
+      {
+        "id": 4,
+        "code": "CL004",
+        "name": "Database",
+        "proffessor": "John Doe",
+        "hoursPerSemister": 500
+      }
+    ],
+    "cases": [
+      {
+        "id": 1,
+        "code": "HA001",
+        "name": "Clinical Case I",
+        "courseId":1,
+        "hoursPerSemister": 500
+      },
+      {
+        "id": 2,
+        "code": "HA001",
+        "name": "Clinical Case II",
+        "courseId":1,
+        "hoursPerSemister": 500
+      },
+      {
+        "id": 3,
+        "code": "HA001",
+        "name": "Clinical Case III",
+        "courseId":1,
+        "hoursPerSemister": 500
+      }
+    ]
+  }
