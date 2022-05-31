@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { IRoute } from 'src/app/types/route';
 
 @Component({
@@ -14,11 +15,15 @@ export class SidebarComponent implements OnInit {
     },
     {
       label: 'Agenda',
-      path: '/agenda',
+      path: '/agendas',
     }
   ]
 
-  constructor() { }
+  constructor(private route: Router) { }
+
+  onRoute(path: string){
+    this.route.navigate([`/${path}`])
+  }
 
   ngOnInit(): void {
   }

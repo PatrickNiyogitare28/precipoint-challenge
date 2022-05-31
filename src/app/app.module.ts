@@ -7,10 +7,15 @@ import { AppComponent } from './app.component';
 import { CoursesModule } from './views/courses/courses.module';
 import { ViewsModule } from './views/views.module';
 import { AgendasModule } from './views/agendas/agendas.module';
+import { StoreDevtoolsModule } from '@ngrx/store-devtools';
+import { environment } from 'src/environments/environment';
+import { StoreModule } from '@ngrx/store';
+import { counterReducer } from './store/reducers/counter.reducer';
+import { breadCrumbReducer } from './store/reducers/bread-crumb.reducer';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent  
   ],
   imports: [
     BrowserModule,
@@ -18,7 +23,8 @@ import { AgendasModule } from './views/agendas/agendas.module';
     ViewsModule,
     CoursesModule,
     AgendasModule,
-    HttpClientModule
+    HttpClientModule,
+    StoreModule.forRoot({breadcrumb: breadCrumbReducer})
   ],
   providers: [],
   bootstrap: [AppComponent]
