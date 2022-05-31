@@ -51,5 +51,55 @@
         "courseId":1,
         "hoursPerSemister": 30
       }
+    ],
+    "slides": [
+      {
+        "id": 1,
+        "caseId": 1,
+        "title": "Introduction to clinical case slide I",
+        "imageUrl":"https://litfl.com/wp-content/uploads/2018/08/Cardiovascular-curveball-LITFL-FB-1200.jpg",
+        "paragraphs": [
+          "The browser's back button is based on the browser history. Luckily,it has a JavaScript API which we can use to navigate dynamically back and forth through our Angular application. In fact, Angular even provides the Location service as a platform abstraction.",
+          "The browser's back button is based on the browser history. Luckily,it has a JavaScript API which we can use to navigate dynamically back and forth through our Angular application. In fact, Angular even provides the Location service as a platform abstraction.",
+          "The browser's back button is based on the browser history. Luckily,it has a JavaScript API which we can use to navigate dynamically back and forth through our Angular application. In fact, Angular even provides the Location service as a platform abstraction."
+        ],
+        "preparedBy": "John Doe"
+      },
+      {
+        "id": 2,
+        "caseId": 1,
+        "title": "Introduction to clinical case slide II",
+        "imageUrl":"https://litfl.com/wp-content/uploads/2018/08/Cardiovascular-curveball-LITFL-FB-1200.jpg",
+        "paragraphs": [
+          "The browser's back button is based on the browser history. Luckily,it has a JavaScript API which we can use to navigate dynamically back and forth through our Angular application. In fact, Angular even provides the Location service as a platform abstraction.",
+          "The browser's back button is based on the browser history. Luckily,it has a JavaScript API which we can use to navigate dynamically back and forth through our Angular application. In fact, Angular even provides the Location service as a platform abstraction.",
+          "The browser's back button is based on the browser history. Luckily,it has a JavaScript API which we can use to navigate dynamically back and forth through our Angular application. In fact, Angular even provides the Location service as a platform abstraction."
+        ],
+        "preparedBy": "John Doe"
+      },
+      {
+        "id": 3,
+        "caseId": 1,
+        "title": "Introduction to clinical case slide III",
+        "imageUrl":"https://litfl.com/wp-content/uploads/2018/08/Cardiovascular-curveball-LITFL-FB-1200.jpg",
+        "paragraphs": [
+          "The browser's back button is based on the browser history. Luckily,it has a JavaScript API which we can use to navigate dynamically back and forth through our Angular application. In fact, Angular even provides the Location service as a platform abstraction.",
+          "The browser's back button is based on the browser history. Luckily,it has a JavaScript API which we can use to navigate dynamically back and forth through our Angular application. In fact, Angular even provides the Location service as a platform abstraction.",
+          "The browser's back button is based on the browser history. Luckily,it has a JavaScript API which we can use to navigate dynamically back and forth through our Angular application. In fact, Angular even provides the Location service as a platform abstraction."
+        ],
+        "preparedBy": "John Doe"
+      },
+      {
+        "id": 4,
+        "caseId": 1,
+        "title": "Introduction to clinical case slide IV",
+        "imageUrl":"https://litfl.com/wp-content/uploads/2018/08/Cardiovascular-curveball-LITFL-FB-1200.jpg",
+        "paragraphs": [
+          "The browser's back button is based on the browser history. Luckily,it has a JavaScript API which we can use to navigate dynamically back and forth through our Angular application. In fact, Angular even provides the Location service as a platform abstraction.",
+          "The browser's back button is based on the browser history. Luckily,it has a JavaScript API which we can use to navigate dynamically back and forth through our Angular application. In fact, Angular even provides the Location service as a platform abstraction.",
+          "The browser's back button is based on the browser history. Luckily,it has a JavaScript API which we can use to navigate dynamically back and forth through our Angular application. In fact, Angular even provides the Location service as a platform abstraction."
+        ],
+        "preparedBy": "John Doe"
+      }
     ]
   }

@@ -14,7 +14,23 @@ export class CourseService {
     return this.http.get('http://localhost:3000/courses')
   }
 
-  public getCaseByCourseId= (id: number) => {
+  public getCoursesById = (id: number) => {
+    return this.http.get('http://localhost:3000/courses/'+id)
+  }
+
+  public getCaseByCourseId = (id: number) => {
     return this.http.get('http://localhost:3000/cases?courseId='+id)
+  }
+
+  public getCaseById = (id: number) => {
+    return this.http.get('http://localhost:3000/cases/'+id)
+  }
+
+  public getSlidesByCaseId = (id: number) => {
+    return this.http.get('http://localhost:3000/slides?caseId='+id)
+  }
+
+  public getSlideById = (id: number) => {
+    return this.http.get('http://localhost:3000/slides/'+id)
   }
 }

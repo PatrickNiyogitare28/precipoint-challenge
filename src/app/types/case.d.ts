@@ -1,5 +1,5 @@
 export type Case = {
-    id: string,
+    id: number,
     code: string,
     name: string,
     courseId: string,

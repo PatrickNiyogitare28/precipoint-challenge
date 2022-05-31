@@ -6,21 +6,27 @@ import { NavigateBack } from 'src/app/utils/navigate-back';
 
 @Component({
   selector: 'app-course',
-  templateUrl: './course.component.html',
-  styleUrls: ['./course.component.scss']
+  templateUrl: './cases.component.html',
+  styleUrls: ['./cases.component.scss']
 })
-export class CourseComponent implements OnInit {
+export class CasesComponent implements OnInit {
 
+  private courseId: number = 0;
   public cases: Array<Case> = [];
 
   constructor(private route: Router, private courseService: CourseService, private activeRoute: ActivatedRoute) { }
   
   getCases = () => {
     const id: number =  parseInt(this.activeRoute.snapshot.paramMap.get('id') as string);
+    this.courseId = id;
     const res = this.courseService.getCaseByCourseId(id)
     res.subscribe((data) => {
       this.cases = data as Array<Case>
     })
+  }
+
+  onRouteToSlides = (caseId: number) => {
+    this.route.navigate(['/courses', this.courseId, caseId])
   }
  
   ngOnInit(): void {

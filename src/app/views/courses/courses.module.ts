@@ -4,7 +4,9 @@ import { HomeComponent } from './home/home.component';
 import { ComponentsModule } from 'src/app/components/components.module';
 import { StudentsComponent } from './students/students.component';
 import { CoursesComponent } from './courses/courses.component';
-import { CourseComponent } from './course/course.component';
+import { CasesComponent } from './cases/cases.component';
+import { SlidesComponent } from './slides/slides.component';
+import { SlideComponent } from './slide/slide.component';
 
 
 
@@ -13,7 +15,9 @@ import { CourseComponent } from './course/course.component';
     HomeComponent,
     StudentsComponent,
     CoursesComponent,
-    CourseComponent
+    CasesComponent,
+    SlidesComponent,
+    SlideComponent
   ],
   imports: [
     CommonModule,

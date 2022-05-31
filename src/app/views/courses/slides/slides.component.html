@@ -13,19 +13,19 @@
                 <table>
                     <thead>
                         <tr>
-                            <th>Course Name</th>
-                            <th>Code</th>
-                            <th>Number of hourse</th>
-                            <th>Slides</th>
+                            <th>#</th>
+                            <th>Slide Title</th>
+                            <th>Prepared By</th>
+                            <th>Slide</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr *ngFor="let case of cases">
-                            <td>{{case.name}}</td>
-                            <td>{{case.code}}</td>
-                            <td>{{case.hoursPerSemister}}</td>
+                        <tr *ngFor="let slide of slides">
+                            <td>{{slide.id}}</td>
+                            <td>{{slide.title}}</td>
+                            <td>{{slide.preparedBy}}</td>
                             <td>
-                                <div class="action-btn">
+                                <div class="action-btn" (click)="onRouteToSlide(slide.id)"> 
                                     Open Slide
                                 </div>
                             </td>

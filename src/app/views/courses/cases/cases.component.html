@@ -1,0 +1,40 @@
+<div class="container">
+    <div class="sidebar-container">
+        <app-navbar></app-navbar>
+    </div>
+    <div class="main-wrapper-container">
+        <div class="sidebar-wrapper">
+            <app-sidebar></app-sidebar>
+        </div>
+        <div class="content-wrapper">
+
+           <div class="mt-2">
+            <div class="tableContainer">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Case Name</th>
+                            <th>Code</th>
+                            <th>Number of hourse</th>
+                            <th>Slides</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let case of cases">
+                            <td>{{case.name}}</td>
+                            <td>{{case.code}}</td>
+                            <td>{{case.hoursPerSemister}}</td>
+                            <td>
+                                <div class="action-btn" (click)="onRouteToSlides(case.id)">
+                                    Slides
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+<app-navigate-back></app-navigate-back>
