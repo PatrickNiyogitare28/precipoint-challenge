@@ -10,7 +10,6 @@ import { AgendasModule } from './views/agendas/agendas.module';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { environment } from 'src/environments/environment';
 import { StoreModule } from '@ngrx/store';
-import { counterReducer } from './store/reducers/counter.reducer';
 import { breadCrumbReducer } from './store/reducers/bread-crumb.reducer';
 
 @NgModule({

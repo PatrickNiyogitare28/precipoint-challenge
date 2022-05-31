@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { CounterComponent } from './views/counter/counter.component';
 
 const routes: Routes = [
   {
@@ -25,10 +24,6 @@ const routes: Routes = [
         loadChildren: () => import('./views/agendas/agenda-routing.module').then(module => module.AgendasRoutingModule)
       }
     ]
-  },
-  {
-    path: 'counter',
-    component: CounterComponent
   }
 ];
 
