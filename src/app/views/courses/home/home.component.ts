@@ -7,7 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  public showCourses:boolean = true;
+
   constructor() { }
+
+  public onShowCourses = (value: boolean) : void => {
+    this.showCourses = value;
+  }
 
   ngOnInit(): void {
   }
