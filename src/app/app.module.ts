@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CoursesModule } from './views/courses/courses.module';
 import { ViewsModule } from './views/views.module';
+import { AgendasModule } from './views/agendas/agendas.module';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { ViewsModule } from './views/views.module';
     AppRoutingModule,
     ViewsModule,
     CoursesModule,
+    AgendasModule,
     HttpClientModule
   ],
   providers: [],

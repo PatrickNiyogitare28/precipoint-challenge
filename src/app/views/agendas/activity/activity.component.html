@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="sidebar-container">
+        <app-navbar></app-navbar>
+    </div>
+    <div class="main-wrapper-container">
+        <div class="sidebar-wrapper">
+            <app-sidebar></app-sidebar>
+        </div>
+        <div class="content-wrapper">
+
+           <div class="mt-2">
+              <div class="student-info">
+                 <h1>Activity Info</h1>
+
+                 <div class="data-card">
+                    <label>Title : <span>{{activity.title}}</span></label>
+                     <label>Id : <span>{{activity.id}}</span></label>
+                     <label>Start Date : <span>{{activity.startDate}}</span></label>
+                     <label>End Date : <span>{{activity.endDate}}</span></label>
+                 </div>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
+<app-navigate-back></app-navigate-back>

@@ -15,6 +15,15 @@ const routes: Routes = [
         loadChildren: () => import('./views/courses/coures-routing.module').then(module => module.CoursesRoutingModule)
       }
     ]
+  },
+  {
+    path: 'agendas',
+    children: [
+      {
+        path: '',
+        loadChildren: () => import('./views/agendas/agenda-routing.module').then(module => module.AgendasRoutingModule)
+      }
+    ]
   }
 ];
 
