@@ -1,7 +1,10 @@
 <div class="container">
-   <div *ngFor="let route of routes; let i = index" class="router-container" (click)="onRoute(route.path)">
-        <div class="parent-route-container">
-            <label class="route">{{route.label}}</label>
+   <div  class="router-container" >
+        <div class="parent-route-container" [ngClass]="{'active': showCourses}" (click)="onRoute('courses')">
+            <label class="route">Courses</label>
+        </div>
+        <div class="parent-route-container" [ngClass]="{'active': !showCourses}" (click)="onRoute('agendas')">
+            <label class="route">Agendas</label>
         </div>
    </div>
 </div>
