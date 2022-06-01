@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { select, Store } from '@ngrx/store';
 import { IRoute } from 'src/app/types/route';
 
 @Component({
@@ -8,24 +9,27 @@ import { IRoute } from 'src/app/types/route';
   styleUrls: ['./sidebar.component.scss']
 })
 export class SidebarComponent implements OnInit {
-  public routes: Array<IRoute> = [
-    {
-      label: 'Courses',
-      path: '/courses',
-    },
-    {
-      label: 'Agenda',
-      path: '/agendas',
-    }
-  ]
+  public showCourses: boolean = false;
 
-  constructor(private route: Router) { }
+  constructor(private route: Router, private store: Store<{breadcrumb: string}>) {
+    
+   }
 
   onRoute(path: string){
     this.route.navigate([`/${path}`])
   }
 
+  onDetectActiveTab = () => {
+   const url = this.route.url;
+   if(url.toLocaleLowerCase().includes('agendas')){
+    this.showCourses = false
+   }
+   else{
+     this.showCourses = true;
+   }
+  }
   ngOnInit(): void {
+    this.onDetectActiveTab();
   }
 
 }
