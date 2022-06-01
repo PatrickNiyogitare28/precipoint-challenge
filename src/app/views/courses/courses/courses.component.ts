@@ -18,7 +18,6 @@ export class CoursesComponent implements OnInit {
      res.subscribe((data) => {
        this.courses = data as Array<Course>;
      })
-     console.log(JSON.stringify(this.courses))
   }
 
   onRouteToCourse = (id: number) => {

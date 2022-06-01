@@ -12,7 +12,6 @@ export class NavbarComponent implements OnInit {
 
   constructor(private store: Store<{breadcrumb: string}>) {
     this.breadCrumb$ = store.pipe(select('breadcrumb'));
-    console.log(this.breadCrumb$)
    }
 
   ngOnInit(): void {

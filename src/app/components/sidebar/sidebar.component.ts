@@ -11,7 +11,7 @@ import { IRoute } from 'src/app/types/route';
 export class SidebarComponent implements OnInit {
   public showCourses: boolean = false;
 
-  constructor(private route: Router, private store: Store<{breadcrumb: string}>) {
+  constructor(private route: Router) {
     
    }
 
